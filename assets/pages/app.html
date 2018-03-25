@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kane's Portfolio</title>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/Style.css">
+    <!--link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/fontawesome.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <body>
+      <div class="banner">
+        <div class="banContents">
+          <div class="banLeft"> KANE CRANE</div>
+          <div class="banRight">PRODUCED FOR ADMISSIONS</div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="headerTitle2"></div>
+      </div>
+      <nav>
+        <div class="navTitle"></div>
+        <div class="navContents">
+          <div rel="appDesign" class="appDesign orange"><i class="fa fa-mobile fa-3x navPadding"></i>
+            <p>APP DESIGN</p>
+          </div><a href="web.html" rel="webDesign" class="webDesign orange"><i class="fa fa-desktop fa-2x navPadding"></i>
+            <p>WEB DESIGN</p></a><a href="ui.html" rel="uiDesign" class="uiDesign orange"><i class="fa fa-toggle-on fa-2x navPadding"> </i>
+            <p>UI DESIGN</p></a><a href="print.html" rel="printDesign" class="printDesign orange"><i class="fa fa-print fa-2x navPadding"></i>
+            <p>PRINT DESIGN</p></a><a href="photo.html" rel="photoWork" class="photoWork orange"><i class="fa fa-camera fa-2x navPadding"></i>
+            <p>PHOTO WORK</p></a><a href="3d.html"rel="threeDWork" class="threeDWork orange"><i class="fa fa-cube fa-2x navPadding"></i>
+            <p>3D WORK</p></a><a href="webdev.html" rel="webDev" class="webDev orange"><i class="fa fa-code fa-2x navPadding"></i>
+            <p>WEB DEV</p></a><a href="game.html" rel="gameDev" class="gameDev orange"><i class="fa fa-gamepad fa-2x navPadding"></i>
+            <p>GAME DEV</p></a>
+        </div>
+      </nav>
+      <div id="appDesign"><img src="../img/app-design.png"></div>
+    </body>
+    <script>
+      $(function() {
+        var pageToShow = $(this).attr('rel');
+        $('.navContents > div').on('click', function() {
+        $(this).siblings().removeClass('orange');
+        $(this).removeClass('grey').addClass('orange');
+        });
+        });
+    </script>
+  </head>
+</html>

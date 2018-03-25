@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kane's Portfolio</title>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/Style.css">
+    <!--link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/fontawesome.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <body>
+      <div class="banner">
+        <div class="banContents">
+          <div class="banLeft"> KANE CRANE</div>
+          <div class="banRight">PRODUCED FOR ADMISSIONS</div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="headerTitle2"></div>
+      </div>
+      <nav>
+        <div class="navTitle"></div>
+        <div class="navContents">
+          <a href="app.html" rel="appDesign" class="appDesign orange"><i class="fa fa-mobile fa-3x navPadding"></i>
+            <p>APP DESIGN</p>
+          </a><a href="web.html" rel="webDesign" class="webDesign grey"><i class="fa fa-desktop fa-2x navPadding"></i>
+            <p>WEB DESIGN</p></a><a href="ui.html" rel="uiDesign" class="uiDesign grey"><i class="fa fa-toggle-on fa-2x navPadding"> </i>
+            <p>UI DESIGN</p></a><a href="print.html" rel="printDesign" class="printDesign grey"><i class="fa fa-print fa-2x navPadding"></i>
+            <p>PRINT DESIGN</p></a><a href="photo.html" rel="photoWork" class="photoWork grey"><i class="fa fa-camera fa-2x navPadding"></i>
+            <p>PHOTO WORK</p></a><div rel="threeDWork" class="threeDWork orange"><i class="fa fa-cube fa-2x navPadding"></i>
+            <p>3D WORK</p></div><a href="webdev.html" rel="webDev" class="webDev grey"><i class="fa fa-code fa-2x navPadding"></i>
+            <p>WEB DEV</p></a><a href="game.html" rel="gameDev" class="gameDev grey"><i class="fa fa-gamepad fa-2x navPadding"></i>
+            <p>GAME DEV</p></a>
+        </div>
+      </nav>
+      <div id="threeDWork"><img src="../img/3d.png">
+        <video width="1280" height="720" controls>
+        <source src="../files/glossy.mp4" type="video/mp4">
+        </video>
+        <div style="height:100px;"></div>
+        <video width="1280" height="720" controls>
+        <source src="../files/broken.mp4" type="video/mp4">
+        </video>
+        <div style="height:100px;"></div>
+        <video width="1280" height="720" controls>
+        <source src="../files/TopFive.mp4" type="video/mp4">
+        </video>
+        <div style="height:100px;"></div>
+        <video width="1280" height="720" controls>
+        <source src="../files/2012.mp4" type="video/mp4">
+        </video>
+        <div style="height:100px;"></div>
+        <img src="../files/banner.png">
+        <div style="height:100px;"></div>
+      </div>
+
+    </body>
+    <script>
+      $(function() {
+        var pageToShow = $(this).attr('rel');
+        $('.navContents > div').on('click', function() {
+        $(this).siblings().removeClass('orange');
+        $(this).removeClass('grey').addClass('orange');
+        });
+        });
+    </script>
+  </head>
+</html>
